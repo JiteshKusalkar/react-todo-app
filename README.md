@@ -6,4 +6,5 @@ Assignment of React training....
 To start the app follow below commands
 
 npm install
+
 npm start
