@@ -1,0 +1,13 @@
+.todo-container {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.todo-input {
+    border-radius: 0;
+    padding: 30px 20px;
+    font-size: 20px;
+    border: 0;
+}
