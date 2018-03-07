@@ -21,13 +21,13 @@ export default class TodoList extends Component {
         return (
             <li className="item form-check" key={this.props.todo.id}>
                 <input type="checkbox"
-                    id={this.props.todo.id}
-                    name={this.props.todo.value}
+                    id={this.state.todo.id}
+                    name={this.state.todo.value}
                     value={this.state.todo.value}
                     checked={this.state.todo.completed}
                     onChange={this.handleChange}
                     className="form-check-input" />
-                <label htmlFor={this.props.todo.id} className="form-check-label">{this.props.todo.value}</label>
+                <label htmlFor={this.state.todo.id} className="form-check-label">{this.state.todo.value}</label>
             </li>
         )
     }

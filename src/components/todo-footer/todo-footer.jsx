@@ -13,7 +13,7 @@ export default class TodoFooter extends Component {
         this.setState({
             activeState: action
         });
-        this.props.updateState(this.state.activeState);
+        this.props.updateState(action);
     }
 
     render() {

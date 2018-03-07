@@ -47,7 +47,6 @@ export default class TodoApp extends Component {
             // Resetting value
             this.prevState.container.todo.value = '';
             this.prevState.container.todo.id++;
-            console.log(this.prevState);
         } else {
             alert('Please enter some value');
         }
@@ -68,7 +67,6 @@ export default class TodoApp extends Component {
     }
 
     updateTodo(todo) {
-        console.log(this.prevState);
         this.setState({
             container: this.prevState.container
         });
@@ -85,7 +83,7 @@ export default class TodoApp extends Component {
                 </form>
                 <ul className="todo-list">
                     {this.getTodos(this.state.container.activeState).map((todo, index) => {
-                        return <TodoList updateTodo={this.updateTodo} key={index} todo={todo} />
+                        return <TodoList updateTodo={this.updateTodo} key={todo.id} todo={todo} />
                     })}
                 </ul>
                 <TodoFooter actions={this.actions} activeCount={this.getTodos('Active').length} updateState={this.updateState} />
